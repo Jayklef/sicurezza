@@ -16,8 +16,8 @@ import javax.mail.internet.MimeMessage;
 @Slf4j
 public class EmailService implements EmailSender {
 
-
-    private JavaMailSender mailSender;
+   @Autowired
+    private final JavaMailSender mailSender;
 
     @Override
     public void send(String to, String email) {

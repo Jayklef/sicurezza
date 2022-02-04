@@ -1,0 +1,19 @@
+server:
+  port: '8004'
+
+
+  spring:
+    application:
+      name:
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/regis
+    password: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+

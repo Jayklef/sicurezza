@@ -16,6 +16,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Service
+@AllArgsConstructor
 public class AppUserService implements UserDetailsService {
 
     private static String User_Not_Found_msg = "User with email %s not found";
@@ -63,5 +64,8 @@ public class AppUserService implements UserDetailsService {
 
         //TODO: send Email
         return token;
+    }
+
+    public void enableAppUser(String email) {
     }
 }
